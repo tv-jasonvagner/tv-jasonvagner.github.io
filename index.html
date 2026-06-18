@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Team Vagner</title>
+  <meta name="description" content="Apps by Team Vagner." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0a0a0a;
+      color: #f0f0f0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .brand {
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #888;
+      margin-bottom: 3rem;
+    }
+    h1 {
+      font-size: clamp(2rem, 6vw, 3.5rem);
+      font-weight: 700;
+      text-align: center;
+      line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+    .subtitle {
+      color: #888;
+      font-size: 1.1rem;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .apps {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+    .app-card {
+      background: #141414;
+      border: 1px solid #222;
+      border-radius: 16px;
+      padding: 2rem;
+      width: 260px;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .app-card:hover {
+      border-color: #444;
+      transform: translateY(-2px);
+    }
+    .app-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
+      margin-bottom: 1rem;
+      background: #222;
+    }
+    .app-name {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+    .app-desc {
+      font-size: 0.9rem;
+      color: #888;
+      line-height: 1.5;
+    }
+    footer {
+      margin-top: 4rem;
+      font-size: 0.8rem;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+  <div class="brand">Team Vagner</div>
+  <h1>Simple apps.<br>Built to last.</h1>
+  <p class="subtitle">Useful tools for everyday life.</p>
+  <div class="apps">
+    <a href="/gpxlife/" class="app-card">
+      <img class="app-icon" src="/gpxlife/icon.png" alt="GPX Life icon" />
+      <div class="app-name">GPX Life</div>
+      <div class="app-desc">Your routes, your library. The on-device app for GPX files — offline-first, private by design.</div>
+    </a>
+  </div>
+  <footer>&copy; 2025 Team Vagner</footer>
+</body>
+</html>
